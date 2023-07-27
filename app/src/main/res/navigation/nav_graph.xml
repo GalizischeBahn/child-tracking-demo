@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/allChildrenFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.child_tracking.ui.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="child"
+            app:argType="com.example.child_tracking.data.Child" />
+    </fragment>
+    <fragment
+        android:id="@+id/allChildrenFragment"
+        android:name="com.example.child_tracking.ui.AllChildrenFragment"
+        android:label="fragment_all_children"
+        tools:layout="@layout/fragment_all_children" >
+        <action
+            android:id="@+id/action_allChildrenFragment_to_childOptionsFragment"
+            app:destination="@id/childOptionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/childOptionsFragment"
+        android:name="com.example.child_tracking.ui.ChildOptionsFragment"
+        android:label="ChildOptionsFragment" >
+        <argument
+            android:name="child"
+            app:argType="com.example.child_tracking.data.Child" />
+        <action
+            android:id="@+id/action_childOptionsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_childOptionsFragment_to_mediaPlayerFragment"
+            app:destination="@id/mediaPlayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediaPlayerFragment"
+        android:name="com.example.child_tracking.ui.MediaPlayerFragment"
+        android:label="MediaPlayerFragment" />
+</navigation>

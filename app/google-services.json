@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "20557454502",
+    "firebase_url": "https://child-control-581cf-default-rtdb.firebaseio.com",
+    "project_id": "child-control-581cf",
+    "storage_bucket": "child-control-581cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20557454502:android:7eebb8f52675fb95dde867",
+        "android_client_info": {
+          "package_name": "com.example.child_tracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20557454502-vqb8dpk6ogbg7n9jtgt58sn8h64e413i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.child_tracking",
+            "certificate_hash": "faeb5241eac2e5c57c7e93cdcc8744b5d33d3e3a"
+          }
+        },
+        {
+          "client_id": "20557454502-164554tq2v7higpiruhe1f9hmjcmpgjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtdmr2QzzDBu4CpsO6mVpxLCJ1etGpcSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20557454502-164554tq2v7higpiruhe1f9hmjcmpgjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
